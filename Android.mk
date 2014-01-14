@@ -12,13 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := $(call my-dir)
-
-
-ifeq ($(BOARD_VENDOR),samsung)
-ifeq ($(TARGET_BOARD_PLATFORM),msm7x27a)
-ifneq ($(filter jena jenad $(SAMSUNG_TARGETS),$(TARGET_DEVICE)),)
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
-endif
-endif
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),trebon)
+include $(call first-makefiles-under,$(call my-dir))
 endif
