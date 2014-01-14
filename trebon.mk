@@ -14,8 +14,6 @@
 
 DEVICE_PACKAGE_OVERLAYS += device/samsung/trebon/overlay
 
-include device/samsung/trebon/trebon.mk
-
 ## Video
 PRODUCT_PACKAGES += \
     libstagefrighthw \
