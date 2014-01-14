@@ -14,7 +14,16 @@
 
 DEVICE_PACKAGE_OVERLAYS += device/samsung/trebon/overlay
 
-include device/samsung/trebon/trebon.mk
+# Usb accessory and Wifi
+PRODUCT_PACKAGES += \
+    libnetcmdiface
+
+# Device-specific packages
+PRODUCT_PACKAGES += \
+    sensors.trebon \
+    AriesParts
+
+
 
 ## Video
 PRODUCT_PACKAGES += \
