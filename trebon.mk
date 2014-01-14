@@ -15,13 +15,6 @@
 DEVICE_PACKAGE_OVERLAYS += device/samsung/trebon/overlay
 
 
-# Device-specific packages
-PRODUCT_PACKAGES += \
-    sensors.trebon \
-    AriesParts
-
-
-
 ## Video
 PRODUCT_PACKAGES += \
     libstagefrighthw \
